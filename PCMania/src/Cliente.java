@@ -15,6 +15,6 @@ public class Cliente {
             }
         }
 
-        System.out.println("Preco total: " + total);
+        System.out.println("Preco total: R$" + total);
     }
 }

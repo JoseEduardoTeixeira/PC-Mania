@@ -143,6 +143,28 @@ public class Main {
             opcao = sc.nextInt();
         }
 
+        //Mostrando os resultados
+        System.out.println();
+        System.out.println("Informacoes do cliente:");
+        System.out.println("Nome: " + pessoa.nome);
+        System.out.println("CPF: " + pessoa.cpf);
+        System.out.println();
+
+        System.out.println("Computadores comprados:");
+        for(int i = 0; i < pessoa.comps.length; i++){
+            if(pessoa.comps[i] != null){
+                System.out.println("Computador " + (i+1));
+                pessoa.comps[i].mostraPCConfigs();
+                System.out.println();
+                System.out.println("======================================");
+                System.out.println();
+            }
+            else{
+                break;
+            }
+        }
+        System.out.println();
+
         pessoa.calculaTotalCompra();
     }
 }
